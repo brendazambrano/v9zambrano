@@ -1,0 +1,19 @@
+<div class="widget facebook-like{{#unless widget_title}} no-title{{/unless}}{{#if custom_class}} {{custom_class}}{{/if}}">
+	{{#if widget_title}}
+	<h3 class="widget-title">{{{widget_title}}}</h3>
+	{{/if}}
+	<div class="widget-content">		
+		<div class="sf-fb-like-box" data-pageurl="{{fanpage_url}}" data-show-faces="{{show_faces}}"  data-header="{{show_header}}" data-stream="{{show_stream}}" data-show-border="{{show_border}}">
+		</div>
+	</div>
+</div>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=485347978271578&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+

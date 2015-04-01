@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    {{! Document Settings }}
+    <meta charset="utf-8" />
+    {{! Page Meta }}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+    <link href="{{asset "img/favicon.ico"}}" rel="shortcut icon" type="image/x-icon">
+    <link href="{{asset "img/apple-touch-icon-precomposed.png"}}" rel="apple-touch-icon">
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <meta name="google-site-verification" content=""> {{! Change for Google Webmaster verification }}
+    {{ghost_head}}    
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:00' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.min.css"}}" />              
+    <link rel="stylesheet" type="text/css" href="{{asset "css/colors/indian-red.css"}}" />               
+    <script type="text/javascript"> var rootUrl = '{{@blog.url}}';</script>        
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61436301-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body class="{{body_class}} {{block "customBodyClass"}}"
+    data-show-top-bar="true" {{! Change this option to "true" or "false" }}
+    data-header-layout="right" {{! Change this option to "left" or "right" or "center" }}
+    data-header-sticky="true" {{! Change this option to "true" or "false" }}
+    data-header-color="main-color" {{! Change this option to "light" or "dark" or "main-color" or "transparent" }}    
+    data-full-height-banner="false" {{! Change this option to "true" or "false" }}
+    data-footer-color="light" {{! Change this option to "light" or "dark"}}
+    data-parallax="true" {{! Change this option to "true" or "false" }}
+    data-animation="true" {{! Change this option to "true" or "false" }}
+    data-border-pattern="none" {{! Change this option to "solid" or "dashed" or "none" }}
+    data-cover-preview-by="explain" {{! Change this option to "popup" or "explain" }}
+    >        
+    <!--[if lt IE 9]>
+    <div class="outdated-frame">
+        You are using an <strong>outdated</strong> browser. Please <a href="http://www.google.com/chrome/intl/en/landing_chrome.html">upgrade your browser</a>.
+    </div>
+    <![endif]-->     
+    {{>header/default}}        
+    {{{body}}}        
+    {{>footer/default}}     
+    <div class="go-to-top-wrap">
+        <a href="javascript:;" class="go-to-top"><i class="fa fa-angle-up"></i></a>
+    </div>        
+    {{ghost_foot}}    
+    {{{block "customScript"}}}
+    <script type="text/javascript" src="{{asset "js/main.min.js"}}"></script>  
+</body>
+</html>

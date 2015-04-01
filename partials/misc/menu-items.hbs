@@ -1,0 +1,60 @@
+{{!Begin Menu Item}}
+<li class="active">
+	<a href="{{@blog.url}}"> <!--Keep href="{{@blog.url}}" for home page-->
+		Blog <!--Change text of menu here-->
+	</a>
+</li>
+{{!End Menu Item}}
+<li class="has-children"> <!-- Add class="has-children" for multi level menu.-->
+	<a href="#">Servicios</a>
+	<!-- Begin level 3 menu-->
+	<ul class="sub-menu">
+		<li>
+			<a href="{{@blog.url}}/coaching">Coaching de Marca</a>
+		</li>
+
+		<li>
+			<a href="{{@blog.url}}/marca">Marca Personal</a>
+		</li>
+		<li>
+			<a href="{{@blog.url}}/contenido">Creación de contenido</a>
+		</li>
+		<li>
+			<a href="{{@blog.url}}/mrk">Estrategias de MRK digital</a>
+		</li>
+		
+	</ul>
+	<!-- End level 3 menu-->
+</li>
+{{!Begin Menu Item}}
+<li class="has-children"> <!-- Add class="has-children" for multi level menu.-->
+	<a href="#"> <!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/resume/-->
+		Comunidad digital <!--Change text of menu here-->
+	</a>
+	<!-- Begin level 2 menu-->
+	<ul class="sub-menu">				
+		<li>
+			<a href="{{@blog.url}}/lectores">Lectores Élite</a>
+		</li>
+		
+	</ul>
+	<!-- End level 2 menu-->
+</li>
+{{!End Menu Item}}
+
+{{!Begin Menu Item}}
+<li>
+	<a href="{{@blog.url}}/acerca"> <!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/about/-->
+		Acerca<!--Change text of menu here-->
+	</a>
+</li>
+{{!End Menu Item}}
+
+{{!Begin Menu Item}}
+<li>
+	<a href="{{@blog.url}}/contact/"> <!--Change href: {{@blog.url}}/YOUR_STATIC_PAGE_URL_FROM_STEP_1/  Example: {{@blog.url}}/contact/-->
+		Contacto <!--Change text of menu here-->
+	</a>
+</li>
+{{!End Menu Item}}
+{{!Create your next Menu Item}}
